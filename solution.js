@@ -57,6 +57,24 @@ function maxOfThree(num1,num2,num3){
     return Math.max(num1,num2,num3);
         };
 maxOfThree(421,1,234);
+
+// OR
+
+function maxOfThree(num1,num2,num3){
+    array = [num1,num2,num3];
+    max = 0;
+    i=0;
+    while(i<3){
+      if (array[i]>max){
+        max = array[i];
+      }
+    i++;
+    }
+    return max;
+  };
+  //maxOfThree(1,3,2);
+  //maxOfThree(4,3,2);
+  maxOfThree(1,3,5);
         
 ////// ex6
 
@@ -80,5 +98,23 @@ function printLongestWord(arrayOfStrings){
     return Math.pow(num1*num2,num3);
   };
   transmogrify(5,3,2);
+
+
+//OR
+
+function transmogrify(num1,num2,num3){
+
+    multiplied = num1*num2;
+  
+    product = 1;
+    i=0;
+    while(i<num3){
+      product *= multiplied;
+      i++;
+    }
+    return product;
+  };
+  transmogrify(5,3,2);
+
 
   ////// END OF SOLUTIONS //////
